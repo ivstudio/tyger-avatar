@@ -1,0 +1,38 @@
+{
+	"name": "tyger-avatars",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"clean": "rm -rf src && rm -rf dist",
+		"svgr": "svgr --icon --title-prop --typescript -d src assets",
+		"build": "npm run clean && npm run svgr && rollup -c"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-commonjs": "^20.0.0",
+		"@rollup/plugin-node-resolve": "^13.0.4",
+		"@svgr/cli": "^5.5.0",
+		"@types/react": "^17.0.19",
+		"postcss": "^8.3.6",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"rollup": "^2.56.2",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.1",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"typescript": "^4.3.5"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0"
+	}
+}
