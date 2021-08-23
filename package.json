@@ -1,5 +1,5 @@
 {
-	"name": "tyger-avatars",
+	"name": "tyger-avatar",
 	"version": "1.0.2",
 	"description": "Illustrated avatar react library",
 	"main": "dist/index.js",
