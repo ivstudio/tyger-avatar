@@ -1,21 +1,19 @@
-# tyger-avatars
+# tyger-avatar
 
 > An illustrated avatar react library
 
 ## Installation
 
-```
-npm i tyger-avatars
+```bash
+npm i tyger-avatar
 ```
 
 ## Usage
 
-```js
-import { TrChelsea } from 'tyger-avatars';
+```jsx
+import { TrChelsea } from 'tyger-avatar';
 
-const App = () => {
-	return <TrChelsea style={{ fontSize: '40px' }} />;
-};
+const App = () => <TrChelsea style={{ fontSize: '40px' }} />;
 ```
 
 ## options
