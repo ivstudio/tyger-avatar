@@ -1,7 +1,7 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
-const analyze = require('rollup-plugin-analyzer');
+import filesize from 'rollup-plugin-filesize';
 const packageJson = require('./package.json');
 
 export default {
@@ -17,6 +17,6 @@ export default {
 		peerDepsExternal(),
 		resolve(),
 		typescript({ useTsconfigDeclarationDir: true }),
-		analyze(),
+		filesize(),
 	],
 };

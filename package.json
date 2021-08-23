@@ -1,8 +1,8 @@
 {
-	"name": "tyger-avatars",
+	"name": "tyger-avatar",
 	"version": "1.0.0",
-	"description": "Collection of Illustrated Avatars",
-	"main": "dist/index.js",
+	"description": "Illustrated avatar react library",
+	"main": "dist/index.esm.js",
 	"module": "dist/index.esm.js",
 	"scripts": {
 		"clean": "rm -rf src && rm -rf dist",
@@ -12,11 +12,11 @@
 		"build-storybook": "build-storybook"
 	},
 	"keywords": [
-		"svg",
-		"svg icon library",
-		"Illustrated Avatars"
+		"Illustrated avatars",
+		"React Avatar library",
+		"Avatars"
 	],
-	"author": "",
+	"author": "Ignacio Villamar",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.15.0",
@@ -33,7 +33,7 @@
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"rollup": "^2.56.2",
-		"rollup-plugin-analyzer": "^4.0.0",
+		"rollup-plugin-filesize": "^9.1.1",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-typescript2": "^0.30.0",
 		"typescript": "^4.3.5"
