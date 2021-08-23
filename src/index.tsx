@@ -1,4 +1,4 @@
-export { default as Chelsea } from './Chelsea'
-export { default as Eric } from './Eric'
-export { default as Samantha } from './Samantha'
-export { default as Torsten } from './Torsten'
+export { default as TrChelsea } from './TrChelsea'
+export { default as TrEric } from './TrEric'
+export { default as TrSamantha } from './TrSamantha'
+export { default as TrTorsten } from './TrTorsten'

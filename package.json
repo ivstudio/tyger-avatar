@@ -1,7 +1,7 @@
 {
 	"name": "tyger-avatars",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Illustrated avatar react library",
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
@@ -13,8 +13,12 @@
 		"svgr": "svgr --icon --title-prop --typescript -d src assets",
 		"build": "npm run clean && npm run svgr && rollup -c"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"Illustrated avatars",
+		"React Avatar library",
+		"Avatars"
+	],
+	"author": "Ignacio Villamar",
 	"license": "ISC",
 	"devDependencies": {
 		"@rollup/plugin-babel": "^5.3.0",
