@@ -1,10 +1,8 @@
-import React from 'react';
-import {
-	TygerEric,
-	TygerChelsea,
-	TygerSamantha,
-	TygerTorsten,
-} from '../src/index';
+import React, { Suspense, lazy } from 'react';
+const TrChealsea = lazy(() => import('../src/TrChelsea'));
+const TrSamantha = lazy(() => import('../src/TrSamantha'));
+const TrTorsten = lazy(() => import('../src/TrTorsten'));
+const TrEric = lazy(() => import('../src/TrEric'));
 
 export type TAvatarName = 'Eric' | 'Chelsea' | 'Samantha' | 'Torsten';
 export type TSize = 'sm' | 'md' | 'lg' | 'xlg';
@@ -46,16 +44,16 @@ const TygerAvatar = ({
 	});
 
 	return (
-		<>
+		<Suspense fallback={<></>}>
 			{
 				{
-					Eric: <TygerEric {...getProps()} />,
-					Chelsea: <TygerChelsea {...getProps()} />,
-					Samantha: <TygerSamantha {...getProps()} />,
-					Torsten: <TygerTorsten {...getProps()} />,
+					Eric: <TrEric {...getProps()} />,
+					Chelsea: <TrChealsea {...getProps()} />,
+					Samantha: <TrSamantha {...getProps()} />,
+					Torsten: <TrTorsten {...getProps()} />,
 				}[name]
 			}
-		</>
+		</Suspense>
 	);
 };
 
