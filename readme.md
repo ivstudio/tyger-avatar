@@ -13,13 +13,9 @@ npm i tyger-avatars
 ```js
 import { TrChelsea } from 'tyger-avatars';
 
-function App() {
-	return (
-		<>
-			<TrChelsea style={{ fontSize: '40px' }} />
-		</>
-	);
-}
+const App = () => {
+	return <TrChelsea style={{ fontSize: '40px' }} />;
+};
 ```
 
 ## options
