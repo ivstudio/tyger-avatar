@@ -9,8 +9,8 @@
 		"dist"
 	],
 	"scripts": {
-		"clean": "rm -rf src && rm -rf dist",
-		"svgr": "svgr --icon --title-prop --typescript -d src assets",
+		"clean": "rm -rf src/Components && rm -rf dist",
+		"svgr": "svgr --icon --title-prop --typescript -d src/Components assets",
 		"build": "npm run clean && npm run svgr && rollup -c"
 	},
 	"keywords": [

@@ -1,4 +1,4 @@
-export { default as TrChelsea } from './TrChelsea'
-export { default as TrEric } from './TrEric'
-export { default as TrSamantha } from './TrSamantha'
-export { default as TrTorsten } from './TrTorsten'
+export { default as TrChelsea } from './Components/TrChelsea';
+export { default as TrEric } from './Components/TrEric';
+export { default as TrSamantha } from './Components/TrSamantha';
+export { default as TrTorsten } from './Components/TrTorsten';
