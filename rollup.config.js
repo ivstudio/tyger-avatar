@@ -5,7 +5,7 @@ import filesize from 'rollup-plugin-filesize';
 const packageJson = require('./package.json');
 
 export default {
-	input: './src/index.tsx',
+	input: ['src/index.tsx'],
 	output: [
 		{
 			file: packageJson.module,

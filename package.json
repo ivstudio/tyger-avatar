@@ -2,15 +2,15 @@
 	"name": "tyger-avatar",
 	"version": "1.0.0",
 	"description": "Illustrated avatar react library",
-	"main": "dist/index.esm.js",
+	"main": "dist/index.d.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
 	"files": [
 		"dist"
 	],
 	"scripts": {
-		"clean": "rm -rf src/Components && rm -rf dist",
-		"svgr": "svgr --icon --title-prop --typescript -d src/Components assets",
+		"clean": "rm -rf src/TrAvatars && rm -rf dist",
+		"svgr": "svgr --icon --title-prop --no-dimensions --typescript -d src/TrAvatars assets",
 		"build": "npm run clean && npm run svgr && rollup -c"
 	},
 	"keywords": [
