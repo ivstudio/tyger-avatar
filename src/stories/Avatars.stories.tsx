@@ -1,19 +1,22 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Avatar from './Avatars';
+import { TrChelsea } from '../TrAvatars';
 
 export default {
 	title: 'Avatars',
-	component: Avatar,
+	component: TrChelsea,
 	args: {
 		width: 160,
 	},
-} as ComponentMeta<typeof Avatar>;
+} as ComponentMeta<typeof TrChelsea>;
 
-const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
+const Template: ComponentStory<typeof TrChelsea> = (args) => (
+	<TrChelsea {...args} />
+);
 
-export const Primary = Template.bind({});
-Primary.args = {
-	primary: true,
+export const Chelsea = Template.bind({});
+Chelsea.args = {
+	title: 'Add your svg title',
+	titleId: 'svgId',
 };
