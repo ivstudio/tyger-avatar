@@ -1,6 +1,6 @@
 {
 	"name": "tyger-avatar",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Illustrated avatar react library",
 	"main": "dist/index.d.js",
 	"module": "dist/index.esm.js",
