@@ -4,7 +4,7 @@ interface SVGRProps {
   titleId?: string;
 }
 
-function SvgTrSamantha({
+function TrSamantha({
   title,
   titleId,
   ...props
@@ -169,4 +169,4 @@ function SvgTrSamantha({
   );
 }
 
-export default SvgTrSamantha;
+export default TrSamantha;

@@ -4,7 +4,7 @@ interface SVGRProps {
   titleId?: string;
 }
 
-function SvgTrEric({
+function TrEric({
   title,
   titleId,
   ...props
@@ -119,4 +119,4 @@ function SvgTrEric({
   );
 }
 
-export default SvgTrEric;
+export default TrEric;

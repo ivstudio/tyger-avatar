@@ -3,7 +3,7 @@ function defaultTemplate(
 	opts,
 	{ imports, interfaces, componentName, props, jsx }
 ) {
-	const tygerIcon = `${componentName.name.replace('Svg', 'Icon')}`;
+	const tygerIcon = `${componentName.name.replace('Svg', '')}`;
 	const plugins = ['jsx'];
 	if (opts.typescript) {
 		plugins.push('typescript');

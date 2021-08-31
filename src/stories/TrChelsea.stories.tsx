@@ -8,6 +8,8 @@ export default {
 	component: TrChelsea,
 	args: {
 		width: 160,
+		title: 'Add your svg title',
+		titleId: 'svgId',
 	},
 } as ComponentMeta<typeof TrChelsea>;
 
@@ -16,7 +18,3 @@ const Template: ComponentStory<typeof TrChelsea> = (args) => (
 );
 
 export const Chelsea = Template.bind({});
-Chelsea.args = {
-	title: 'Add your svg title',
-	titleId: 'svgId',
-};

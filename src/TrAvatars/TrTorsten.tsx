@@ -4,7 +4,7 @@ interface SVGRProps {
   titleId?: string;
 }
 
-function SvgTrTorsten({
+function TrTorsten({
   title,
   titleId,
   ...props
@@ -116,4 +116,4 @@ function SvgTrTorsten({
   );
 }
 
-export default SvgTrTorsten;
+export default TrTorsten;
