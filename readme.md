@@ -2,6 +2,10 @@
 
 > An illustrated avatar react library
 
+[View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
+
+---
+
 ## Installation
 
 ```bash
@@ -13,17 +17,13 @@ npm i tyger-avatar
 ```jsx
 import { TrChelsea } from 'tyger-avatar';
 
-const App = () => <TrChelsea style={{ fontSize: '40px' }} />;
+const App = () => <TrTorsten width="120" />;
 ```
 
 ## options
 
 ```js
-<TrSamantha
-	style={{ fontSize: '80px' }}
-	title="my title"
-	titleId="my-title-id"
-/>
+<TrSamantha width="40" title="my title" titleId="my-title-id" />
 ```
 
 ## License
