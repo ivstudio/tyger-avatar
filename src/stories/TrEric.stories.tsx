@@ -7,7 +7,6 @@ export default {
 	title: 'Avatars',
 	component: TrEric,
 	args: {
-		width: 160,
 		title: 'Add your svg title',
 		titleId: 'svgId',
 	},

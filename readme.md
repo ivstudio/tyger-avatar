@@ -17,13 +17,15 @@ npm i tyger-avatar
 ```jsx
 import { TrChelsea } from 'tyger-avatar';
 
-const App = () => <TrTorsten width="120" />;
+<TrTorsten width="120" />;
 ```
 
 ## options
 
 ```js
-<TrSamantha width="40" title="my title" titleId="my-title-id" />
+import { TrSamantha } from 'tyger-avatar';
+
+<TrSamantha width="40" title="my title" titleId="my-title-id" />;
 ```
 
 ## License
