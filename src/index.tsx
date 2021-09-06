@@ -8,3 +8,6 @@ export { default as TrImran } from './TrAvatars/TrImran';
 export { default as TrMaria } from './TrAvatars/TrMaria';
 export { default as TrRachel } from './TrAvatars/TrRachel';
 export { default as TrShamila } from './TrAvatars/TrShamila';
+export { default as TrAlex } from './TrAvatars/TrAlex';
+export { default as TrFelix } from './TrAvatars/TrFelix';
+export { default as TrEnrique } from './TrAvatars/TrEnrique';
