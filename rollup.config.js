@@ -9,7 +9,7 @@ export default {
 	input: ['src/index.tsx'],
 	output: [
 		{
-			file: packageJson.module,
+			file: packageJson.main,
 			format: 'esm',
 			sourcemap: true,
 		},

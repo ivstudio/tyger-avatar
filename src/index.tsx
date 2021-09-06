@@ -11,3 +11,6 @@ export { default as TrShamila } from './TrAvatars/TrShamila';
 export { default as TrAlex } from './TrAvatars/TrAlex';
 export { default as TrFelix } from './TrAvatars/TrFelix';
 export { default as TrEnrique } from './TrAvatars/TrEnrique';
+export { default as TrSophia } from './TrAvatars/TrSophia';
+export { default as TrHarry } from './TrAvatars/TrHarry';
+export { default as TrHelen } from './TrAvatars/TrHelen';
