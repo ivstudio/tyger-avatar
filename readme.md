@@ -28,6 +28,8 @@ import { TrSamantha } from 'tyger-avatar';
 <TrSamantha width="40" title="my title" titleId="my-title-id" />;
 ```
 
+[View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
+
 ## License
 
 MIT
