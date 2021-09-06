@@ -7,14 +7,14 @@
 		"type": "git",
 		"url": "https://github.com/ivstudio/tyger-avatar"
 	},
-	"main": "dist/index.d.js",
-	"module": "dist/index.esm.js",
-	"types": "dist/index.d.ts",
+	"main": "lib/index.esm.js",
+	"module": "lib/index.esm.js",
+	"types": "lib/index.d.ts",
 	"files": [
-		"dist"
+		"lib"
 	],
 	"scripts": {
-		"clean": "rm -rf src/TrAvatars && rm -rf dist",
+		"clean": "rm -rf src/TrAvatars && rm -rf lib",
 		"svgr": "svgr --icon --title-prop --no-dimensions --typescript -d src/TrAvatars assets",
 		"build": "npm run clean && npm run svgr && rollup -c",
 		"storybook": "start-storybook -p 6006",
