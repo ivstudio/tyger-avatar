@@ -20,9 +20,11 @@
 		"build-storybook": "build-storybook"
 	},
 	"keywords": [
-		"Illustrated avatars",
-		"React Avatar library",
-		"Avatars"
+		"avatars",
+		"illustrated avatars",
+		"react avatar library",
+		"avatar generator",
+		"ivstudio"
 	],
 	"author": "Ignacio Villamar",
 	"license": "ISC",
