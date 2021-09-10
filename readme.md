@@ -22,7 +22,7 @@ import { TrChelsea } from 'tyger-avatar';
 <TrTorsten width="120" />;
 ```
 
-## options
+## Options
 
 ```js
 import { TrSamantha } from 'tyger-avatar';

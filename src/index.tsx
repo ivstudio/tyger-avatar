@@ -14,3 +14,7 @@ export { default as TrEnrique } from './TrAvatars/TrEnrique';
 export { default as TrSophia } from './TrAvatars/TrSophia';
 export { default as TrHarry } from './TrAvatars/TrHarry';
 export { default as TrHelen } from './TrAvatars/TrHelen';
+export { default as TrStu } from './TrAvatars/TrStu';
+export { default as TrNancy } from './TrAvatars/TrNancy';
+export { default as TrChad } from './TrAvatars/TrChad';
+export { default as TrCathy } from './TrAvatars/TrCathy';
