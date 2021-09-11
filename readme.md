@@ -17,18 +17,19 @@ npm i tyger-avatar
 ## Usage
 
 ```jsx
-import { TrChelsea } from 'tyger-avatar';
+import TygerAvatar from 'tyger-avatar';
 
-<TrTorsten width="120" />;
+<TygerAvatar name="TrIggy" />;
 ```
 
 ## Options
 
-```js
-import { TrSamantha } from 'tyger-avatar';
-
-<TrSamantha width="40" title="my title" titleId="my-title-id" />;
-```
+| Atrribute | Type   | Default | Description                                                                                                                                                                                  |
+| :-------- | :----- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name\*    | string | null    | TrChelsea, TrEric, TrSamantha, TrTorsten, TrIggy, TrFranklin, TrImran, TrMaria, TrRachel, TrShamila, TrAlex, TrFelix, TrEnrique, TrSophia, TrHarry, TrHelen, TrStu, TrNancy, TrChad, TrCathy |
+| size      | string | md      | xxsm, xsm, sm, md, lg, xlg, xxlg, xxxlg                                                                                                                                                      |
+| title     | string | null    |                                                                                                                                                                                              |
+| id        | string | null    |                                                                                                                                                                                              |
 
 [View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
 

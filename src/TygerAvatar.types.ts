@@ -30,8 +30,6 @@ export type TAvatarSize =
 	| 'xxlg'
 	| 'xxxlg';
 
-export type TAvatarOptions = { [key in TAvatarSize]: number };
-
 export interface TTrComponent {
 	name: TAvatar;
 	title?: string;
@@ -39,3 +37,6 @@ export interface TTrComponent {
 	width?: number;
 	size?: TAvatarSize;
 }
+
+export type TAvatarSizeOptions = { [key in TAvatarSize]: number };
+export type TAvatarTypeOptions = { [key in TAvatar]: any };
