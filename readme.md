@@ -24,12 +24,14 @@ import TygerAvatar from 'tyger-avatar';
 
 ## Options
 
-| Atrribute | Type   | Default | Description                                                                                                                                                                                  |
-| :-------- | :----- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name\*    | string | null    | TrChelsea, TrEric, TrSamantha, TrTorsten, TrIggy, TrFranklin, TrImran, TrMaria, TrRachel, TrShamila, TrAlex, TrFelix, TrEnrique, TrSophia, TrHarry, TrHelen, TrStu, TrNancy, TrChad, TrCathy |
-| size      | string | md      | xxsm, xsm, sm, md, lg, xlg, xxlg, xxxlg                                                                                                                                                      |
-| title     | string | null    |                                                                                                                                                                                              |
-| id        | string | null    |                                                                                                                                                                                              |
+### Props
+
+| Prop   | Type                                                                                                                                                                                                                       |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name\* | `TrChelsea`, `TrEric`, `TrSamantha`, `TrTorsten`, `TrIggy`, `TrFranklin`, `TrImran`, `TrMaria`, `TrRachel`, `TrShamila`, `TrAlex`, `TrFelix`, `TrEnrique`, `TrSophia`, `TrHarry`, `TrHelen`, `TrStu`, `TrNancy`, `TrChad`, |
+| size   | `xxsm`, `xsm`, `sm`, `md`, `lg`, `xlg`, `xxlg`, `xxxlg`,                                                                                                                                                                   |
+| title  | string                                                                                                                                                                                                                     |
+| id     | string                                                                                                                                                                                                                     |
 
 [View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
 

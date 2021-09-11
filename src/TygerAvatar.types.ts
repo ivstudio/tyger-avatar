@@ -36,6 +36,7 @@ export interface TTrComponent {
 	id?: string;
 	width?: number;
 	size?: TAvatarSize;
+	onClick?: () => void;
 }
 
 export type TAvatarSizeOptions = { [key in TAvatarSize]: number };

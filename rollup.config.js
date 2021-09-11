@@ -3,13 +3,12 @@ import resolve from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 import filesize from 'rollup-plugin-filesize';
 const svgr = require('@svgr/rollup').default;
-const packageJson = require('./package.json');
 
 export default {
 	input: 'src/index.tsx',
 	output: [
 		{
-			dir: packageJson.main,
+			dir: 'lib',
 			format: 'esm',
 			sourcemap: true,
 		},

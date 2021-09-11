@@ -30,6 +30,7 @@ const getAvatar = (avatarType: TAvatar) => {
 		TrChad: React.lazy(() => import(`./TrAvatars/TrChad`)),
 		TrCathy: React.lazy(() => import(`./TrAvatars/TrCathy`)),
 	};
+
 	if (avatars[avatarType]) {
 		return avatars[avatarType];
 	}
@@ -51,11 +52,11 @@ const getSize = (size: TAvatarSize) => {
 };
 
 const TygerAvatar: FunctionComponent<TTrComponent> = (props) => {
-	const { name: avatarType, size = 'md', width = null } = props;
-	const TrComponent = getAvatar(avatarType);
+	const { name, size = 'md', width = null } = props;
+	const TrComponent = getAvatar(name);
 	const TrWidth = width ? width : getSize(size);
 
-	if (!avatarType) {
+	if (!name) {
 		return null;
 	}
 
