@@ -2,6 +2,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 import filesize from 'rollup-plugin-filesize';
+import gzipPlugin from 'rollup-plugin-gzip';
 const svgr = require('@svgr/rollup').default;
 const packageJson = require('./package.json');
 
@@ -20,5 +21,6 @@ export default {
 		typescript({ useTsconfigDeclarationDir: true }),
 		filesize(),
 		svgr(),
+		gzipPlugin(),
 	],
 };
