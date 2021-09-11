@@ -5,7 +5,7 @@ import filesize from 'rollup-plugin-filesize';
 const svgr = require('@svgr/rollup').default;
 
 export default {
-	input: 'src/index.tsx',
+	input: 'src/TygerAvatar.tsx',
 	output: [
 		{
 			dir: 'lib',
