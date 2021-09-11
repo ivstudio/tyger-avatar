@@ -7,8 +7,8 @@
 		"type": "git",
 		"url": "https://github.com/ivstudio/tyger-avatar"
 	},
-	"main": "lib/index.esm.js",
-	"types": "lib/index.d.ts",
+	"main": "lib/TygerAvatar.js",
+	"types": "lib/TygerAvatar.d.ts",
 	"files": [
 		"lib"
 	],
