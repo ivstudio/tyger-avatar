@@ -1,24 +1,28 @@
-export type TAvatar =
-	| 'TrChelsea'
-	| 'TrEric'
-	| 'TrSamantha'
-	| 'TrTorsten'
-	| 'TrIggy'
-	| 'TrFranklin'
-	| 'TrImran'
-	| 'TrMaria'
-	| 'TrRachel'
-	| 'TrShamila'
-	| 'TrAlex'
-	| 'TrFelix'
-	| 'TrEnrique'
-	| 'TrSophia'
-	| 'TrHarry'
-	| 'TrHelen'
-	| 'TrStu'
-	| 'TrNancy'
-	| 'TrChad'
-	| 'TrCathy';
+export const avatarComponents = [
+	'TrChelsea',
+	'TrEric',
+	'TrSamantha',
+	'TrTorsten',
+	'TrIggy',
+	'TrFranklin',
+	'TrImran',
+	'TrMaria',
+	'TrRachel',
+	'TrShamila',
+	'TrAlex',
+	'TrFelix',
+	'TrEnrique',
+	'TrSophia',
+	'TrHarry',
+	'TrHelen',
+	'TrStu',
+	'TrNancy',
+	'TrChad',
+	'TrCathy',
+	'TrAlex',
+] as const;
+
+export type TAvatar = (typeof avatarComponents)[number];
 
 export type TAvatarSize =
 	| 'xxsm'
