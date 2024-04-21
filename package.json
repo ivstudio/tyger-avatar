@@ -1,6 +1,6 @@
 {
 	"name": "tyger-avatar",
-	"version": "2.1.0",
+	"version": "2.1.2",
 	"sideEffects": false,
 	"description": "Illustrated avatar react library",
 	"homepage": "https://ivstudio.github.io/tyger-avatar-wiki/",
@@ -16,7 +16,7 @@
 	"scripts": {
 		"clean": "rm -rf src/TrAvatars && rm -rf lib",
 		"svgr": "svgr --icon --title-prop --no-dimensions --typescript -d src/TrAvatars assets",
-		"build": "npm run clean && npm run svgr && rollup -c",
+		"build": "npm run clean && npm run svgr && rollup -c --bundleConfigAsCjs",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
@@ -48,8 +48,8 @@
 		"babel-loader": "^8.2.2",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
-		"rollup": "^2.56.2",
-		"rollup-plugin-filesize": "^9.1.1",
+		"rollup": "^4.16.1",
+		"rollup-plugin-filesize": "^10.0.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-typescript2": "^0.36.0",
 		"storybook": "^8.0.8",
