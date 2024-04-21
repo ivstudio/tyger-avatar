@@ -1,20 +1,21 @@
-function defaultTemplate(
-	{ template },
-	opts,
-	{ imports, interfaces, componentName, props, jsx }
-) {
-	const tygerIcon = `${componentName.name.replace('Svg', '')}`;
-	const plugins = ['jsx'];
-	if (opts.typescript) {
-		plugins.push('typescript');
-	}
-	const typeScriptTpl = template.smart({ plugins });
-	return typeScriptTpl.ast`${imports}
+const propTypesTemplate = (
+	{ imports, interfaces, componentName, props, jsx, exports },
+	{ tpl }
+) => {
+	return tpl`${imports}
+  import PropTypes from 'prop-types';
   ${interfaces}
-  function ${tygerIcon}(${props}) {
-    return ${jsx};
+  
+  function ${componentName}(${props}) {
+	return ${jsx};
   }
-  export default ${tygerIcon}
-    `;
-}
-module.exports = defaultTemplate;
+  
+  ${componentName}.propTypes = {
+	title: PropTypes.string,
+  };
+  
+  ${exports}
+	`;
+};
+
+module.exports = propTypesTemplate;

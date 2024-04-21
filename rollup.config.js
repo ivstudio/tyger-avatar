@@ -1,7 +1,7 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
 import filesize from 'rollup-plugin-filesize';
-const svgr = require('@svgr/rollup').default;
+import svgr from '@svgr/rollup';
 
 const avatarComponents = [
 	'TrChelsea',
@@ -33,7 +33,12 @@ const avatarsConfig = avatarComponents.map((name) => ({
 		format: 'esm',
 		sourcemap: true,
 	},
-	plugins: [peerDepsExternal(), typescript(), filesize(), svgr()],
+	plugins: [
+		peerDepsExternal(),
+		typescript({ useTsconfigDeclarationDir: true }),
+		filesize(),
+		svgr(),
+	],
 }));
 
 const TygerAvatarConfig = {
