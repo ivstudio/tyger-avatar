@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrNancy({
   title,
   titleId,
@@ -178,5 +177,4 @@ function TrNancy({
     </svg>
   );
 }
-
 export default TrNancy;

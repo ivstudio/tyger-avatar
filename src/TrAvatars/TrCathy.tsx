@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrCathy({
   title,
   titleId,
@@ -192,5 +191,4 @@ function TrCathy({
     </svg>
   );
 }
-
 export default TrCathy;

@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrMaria({
   title,
   titleId,
@@ -158,5 +157,4 @@ function TrMaria({
     </svg>
   );
 }
-
 export default TrMaria;

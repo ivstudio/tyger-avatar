@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrSophia({
   title,
   titleId,
@@ -308,5 +307,4 @@ function TrSophia({
     </svg>
   );
 }
-
 export default TrSophia;

@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrFelix({
   title,
   titleId,
@@ -193,5 +192,4 @@ function TrFelix({
     </svg>
   );
 }
-
 export default TrFelix;

@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrChad({
   title,
   titleId,
@@ -195,5 +194,4 @@ function TrChad({
     </svg>
   );
 }
-
 export default TrChad;

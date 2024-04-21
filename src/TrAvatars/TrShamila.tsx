@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrShamila({
   title,
   titleId,
@@ -114,5 +113,4 @@ function TrShamila({
     </svg>
   );
 }
-
 export default TrShamila;

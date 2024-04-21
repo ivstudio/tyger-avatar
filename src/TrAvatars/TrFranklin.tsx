@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrFranklin({
   title,
   titleId,
@@ -164,5 +163,4 @@ function TrFranklin({
     </svg>
   );
 }
-
 export default TrFranklin;

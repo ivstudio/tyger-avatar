@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrEnrique({
   title,
   titleId,
@@ -131,5 +130,4 @@ function TrEnrique({
     </svg>
   );
 }
-
 export default TrEnrique;

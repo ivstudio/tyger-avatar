@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrSamantha({
   title,
   titleId,
@@ -169,5 +168,4 @@ function TrSamantha({
     </svg>
   );
 }
-
 export default TrSamantha;

@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrEric({
   title,
   titleId,
@@ -137,5 +136,4 @@ function TrEric({
     </svg>
   );
 }
-
 export default TrEric;

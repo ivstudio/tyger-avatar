@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrChelsea({
   title,
   titleId,
@@ -172,5 +171,4 @@ function TrChelsea({
     </svg>
   );
 }
-
 export default TrChelsea;

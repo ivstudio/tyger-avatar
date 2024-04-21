@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrImran({
   title,
   titleId,
@@ -224,5 +223,4 @@ function TrImran({
     </svg>
   );
 }
-
 export default TrImran;

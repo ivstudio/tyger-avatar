@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrHarry({
   title,
   titleId,
@@ -147,5 +146,4 @@ function TrHarry({
     </svg>
   );
 }
-
 export default TrHarry;

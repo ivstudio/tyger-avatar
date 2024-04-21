@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrTorsten({
   title,
   titleId,
@@ -123,5 +122,4 @@ function TrTorsten({
     </svg>
   );
 }
-
 export default TrTorsten;

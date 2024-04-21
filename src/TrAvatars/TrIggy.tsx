@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrIggy({
   title,
   titleId,
@@ -328,5 +327,4 @@ function TrIggy({
     </svg>
   );
 }
-
 export default TrIggy;

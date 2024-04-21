@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrRachel({
   title,
   titleId,
@@ -176,5 +175,4 @@ function TrRachel({
     </svg>
   );
 }
-
 export default TrRachel;

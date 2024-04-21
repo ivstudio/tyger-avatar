@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrStu({
   title,
   titleId,
@@ -165,5 +164,4 @@ function TrStu({
     </svg>
   );
 }
-
 export default TrStu;

@@ -3,7 +3,6 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-
 function TrHelen({
   title,
   titleId,
@@ -182,5 +181,4 @@ function TrHelen({
     </svg>
   );
 }
-
 export default TrHelen;
