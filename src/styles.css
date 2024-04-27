@@ -1,0 +1,28 @@
+:root {
+	--tr-background: white;
+	--tr-border: rgb(31 41 55);
+}
+
+[data-theme='dark'] {
+	--tr-background: red;
+	--tr-border: rgb(31 41 55);
+}
+
+.tyger-avatar {
+	background-color: var(--tr-background);
+	border: 1px solid var(--tr-border);
+	display: inline-flex;
+	align-items: flex-start;
+	justify-content: center;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+.tyger-avatar > * {
+	-webkit-transform: scale(0.9) translateX(-8px);
+	-ms-transform: scale(0.9) translateX(-8px);
+	transform: scale(0.9) translateX(-8px);
+}
