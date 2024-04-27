@@ -1,13 +1,11 @@
-import React, { Suspense, FunctionComponent, lazy, memo } from 'react';
+import React, { Suspense, lazy } from 'react';
 import {
-	TAvatar,
-	TTrComponent,
-	TAvatarSize,
-	TAvatarSizeOptions,
-	TAvatarTypeOptions,
+	TrComponent,
+	AvatarSizeOptions,
+	AvatarTypeOptions,
 } from './TygerAvatar.types';
 
-const avatars: TAvatarTypeOptions = {
+const avatars: AvatarTypeOptions = {
 	TrChelsea: lazy(() => import(`./TrAvatars/TrChelsea`)),
 	TrEric: lazy(() => import(`./TrAvatars/TrEric`)),
 	TrSamantha: lazy(() => import(`./TrAvatars/TrSamantha`)),
@@ -30,36 +28,28 @@ const avatars: TAvatarTypeOptions = {
 	TrAlex: lazy(() => import(`./TrAvatars/TrAlex`)),
 };
 
-const sizes: TAvatarSizeOptions = {
-	xxsm: 16,
-	xsm: 32,
-	sm: 48,
-	md: 96,
-	lg: 128,
-	xlg: 144,
-	xxlg: 192,
-	xxxlg: 256,
+const sizes: AvatarSizeOptions = {
+	'2xs': 16,
+	'xs': 32,
+	'sm': 48,
+	'md': 96,
+	'lg': 128,
+	'xl': 144,
+	'2xl': 192,
+	'3xl': 256,
 };
 
-const getAvatar = (avatarType: TAvatar) =>
-	avatars[avatarType] || avatars['TrChelsea'];
-
-const getSize = (size: TAvatarSize) => sizes[size] || sizes['md'];
-
-const TygerAvatar: FunctionComponent<TTrComponent> = memo((props) => {
-	const { name, size = 'md', width = null } = props;
-	const TrComponent = getAvatar(name);
-	const TrWidth = width ? width : getSize(size);
-
-	if (!name) {
-		return null;
-	}
-
+export default function TygerAvatar({
+	name = 'TrTorsten',
+	size = 'md',
+	width = undefined,
+	...props
+}: TrComponent) {
+	const TrComponent = avatars[name];
+	const TrWidth = width ? width : sizes[size];
 	return (
 		<Suspense fallback="">
-			<TrComponent {...props} width={TrWidth} />
+			<TrComponent width={TrWidth} {...props} />
 		</Suspense>
 	);
-});
-
-export default TygerAvatar;
+}

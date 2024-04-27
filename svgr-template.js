@@ -12,6 +12,7 @@ const propTypesTemplate = (
   
   ${componentName}.propTypes = {
 	title: PropTypes.string,
+  width: PropTypes.number,
   };
   
   ${exports}
