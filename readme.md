@@ -19,23 +19,11 @@ npm i tyger-avatar
 You can use path imports to avoid pulling in unused avatars.
 
 ```jsx
-// Component
 import { TygerAvatar } from 'tyger-avatar';
 
 export default function App() {
   return (
     <TygerAvatar name="TrIggy" size="md"/>;
-  );
-}
-```
-
-```js
-// Access SVG
-import TygerAvatar from 'tyger-avatar/lib/TrIggy';
-
-export default function App() {
-  return (
-    <TygerAvatar name="TrIggy" width={300}/>;
   );
 }
 ```

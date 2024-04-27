@@ -3,61 +3,6 @@ import typescript from 'rollup-plugin-typescript2';
 import filesize from 'rollup-plugin-filesize';
 import svgr from '@svgr/rollup';
 
-const avatarComponents = [
-	'TrChelsea',
-	'TrEric',
-	'TrSamantha',
-	'TrTorsten',
-	'TrIggy',
-	'TrFranklin',
-	'TrImran',
-	'TrMaria',
-	'TrRachel',
-	'TrShamila',
-	'TrFelix',
-	'TrEnrique',
-	'TrSophia',
-	'TrHarry',
-	'TrHelen',
-	'TrStu',
-	'TrNancy',
-	'TrChad',
-	'TrCathy',
-	'TrAlex',
-];
-
-const avatarsConfig = avatarComponents.map((name) => ({
-	input: `src/TrAvatars/${name}.tsx`,
-	output: {
-		file: `lib/${name}.js`,
-		format: 'esm',
-		sourcemap: true,
-	},
-	plugins: [
-		peerDepsExternal(),
-		typescript({ useTsconfigDeclarationDir: true }),
-		filesize(),
-		svgr(),
-	],
-}));
-
-const TygerAvatarConfig = {
-	input: 'src/TygerAvatar.tsx',
-	output: [
-		{
-			dir: 'lib/TygerAvatar.js',
-			format: 'esm',
-			sourcemap: true,
-		},
-	],
-	plugins: [
-		peerDepsExternal(),
-		typescript({ useTsconfigDeclarationDir: true }),
-		filesize(),
-		svgr(),
-	],
-};
-
 const mainConfig = {
 	input: 'src/index.ts',
 	output: [
@@ -75,4 +20,4 @@ const mainConfig = {
 	],
 };
 
-export default [...avatarsConfig, TygerAvatarConfig, mainConfig];
+export default mainConfig;
