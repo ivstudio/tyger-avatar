@@ -1,17 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import TygerAvatar from '../TygerAvatar';
+import TygerAvatarComponent from '../TygerAvatar';
 
-const meta: Meta<typeof TygerAvatar> = {
-	title: 'Avatars',
-	component: TygerAvatar,
+export default {
+	component: TygerAvatarComponent,
+	argTypes: {
+		width: { control: false },
+		id: { control: false },
+		title: { control: false },
+	},
+} as Meta<typeof TygerAvatarComponent>;
+
+type Story = StoryObj<typeof TygerAvatarComponent>;
+
+export const TygerAvatar: Story = {
 	args: {
 		name: 'TrFelix',
-		size: 'xxlg',
+		size: '2xl',
 	},
 };
-
-export default meta;
-type Story = StoryObj<typeof TygerAvatar>;
-
-export const Primary: Story = {};
