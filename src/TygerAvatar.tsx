@@ -1,9 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import {
-	TrComponent,
+	TrComponentProps,
 	AvatarSizeOptions,
 	AvatarTypeOptions,
 } from './TygerAvatar.types';
+import './styles.css';
 
 const avatars: AvatarTypeOptions = {
 	TrChelsea: lazy(() => import(`./TrAvatars/TrChelsea`)),
@@ -43,13 +44,26 @@ export default function TygerAvatar({
 	name = 'TrTorsten',
 	size = 'md',
 	width = undefined,
-	...props
-}: TrComponent) {
+	rounded = false,
+}: TrComponentProps) {
 	const TrComponent = avatars[name];
 	const TrWidth = width ? width : sizes[size];
+
+	if (rounded) {
+		return (
+			<Suspense fallback="">
+				<div
+					className="tyger-avatar"
+					style={{ width: TrWidth, height: TrWidth }}>
+					<TrComponent width={TrWidth} />
+				</div>
+			</Suspense>
+		);
+	}
+
 	return (
 		<Suspense fallback="">
-			<TrComponent width={TrWidth} {...props} />
+			<TrComponent width={TrWidth} />
 		</Suspense>
 	);
 }

@@ -32,13 +32,16 @@ export type AvatarSize =
 	| '2xl'
 	| '3xl';
 
-export interface TrComponent {
+export interface TrComponentProps {
 	name?: AvatarVariants;
 	title?: string;
 	id?: string;
 	width?: number;
 	size?: AvatarSize;
+	rounded?: boolean;
 }
-export type AvatarComponent = React.LazyExoticComponent<React.FC<TrComponent>>;
+export type AvatarComponent = React.LazyExoticComponent<
+	React.FC<TrComponentProps>
+>;
 export type AvatarSizeOptions = { [key in AvatarSize]: number };
 export type AvatarTypeOptions = Record<AvatarVariants, AvatarComponent>;

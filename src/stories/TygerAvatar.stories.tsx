@@ -8,6 +8,10 @@ export default {
 		width: { control: false },
 		id: { control: false },
 		title: { control: false },
+		rounded: {
+			control: { type: 'boolean' },
+			defaultValue: false,
+		},
 	},
 } as Meta<typeof TygerAvatarComponent>;
 

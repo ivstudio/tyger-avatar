@@ -51,6 +51,7 @@
 		"react-dom": "^18.0.0",
 		"rollup": "^4.16.1",
 		"rollup-plugin-filesize": "^10.0.0",
+		"rollup-plugin-import-css": "^3.5.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-typescript2": "^0.36.0",
 		"storybook": "^8.0.8",

@@ -1,5 +1,6 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
+import { cssModules } from 'rollup-plugin-css-modules';
 import filesize from 'rollup-plugin-filesize';
 import svgr from '@svgr/rollup';
 
@@ -17,6 +18,7 @@ const mainConfig = {
 		typescript({ useTsconfigDeclarationDir: true }),
 		filesize(),
 		svgr(),
+		cssModules(),
 	],
 };
 
