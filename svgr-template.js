@@ -3,17 +3,10 @@ const propTypesTemplate = (
 	{ tpl }
 ) => {
 	return tpl`${imports}
-  import PropTypes from 'prop-types';
   ${interfaces}
-  
   function ${componentName}(${props}) {
 	return ${jsx};
   }
-  
-  ${componentName}.propTypes = {
-	title: PropTypes.string,
-  width: PropTypes.number,
-  };
   
   ${exports}
 	`;

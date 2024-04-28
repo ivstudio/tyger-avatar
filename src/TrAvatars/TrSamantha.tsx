@@ -1,6 +1,5 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-import PropTypes from "prop-types";
 interface SVGRProps {
   title?: string;
   titleId?: string;
@@ -187,8 +186,4 @@ function SvgTrSamantha({
     </svg>
   );
 }
-SvgTrSamantha.propTypes = {
-  title: PropTypes.string,
-  width: PropTypes.number,
-};
 export default SvgTrSamantha;

@@ -1,6 +1,5 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-import PropTypes from "prop-types";
 interface SVGRProps {
   title?: string;
   titleId?: string;
@@ -129,8 +128,4 @@ function SvgTrTorsten({
     </svg>
   );
 }
-SvgTrTorsten.propTypes = {
-  title: PropTypes.string,
-  width: PropTypes.number,
-};
 export default SvgTrTorsten;
