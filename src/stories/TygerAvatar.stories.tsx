@@ -5,13 +5,9 @@ import TygerAvatarComponent from '../TygerAvatar';
 export default {
 	component: TygerAvatarComponent,
 	argTypes: {
-		width: { control: false },
-		id: { control: false },
-		title: { control: false },
-		rounded: {
-			control: { type: 'boolean' },
-			defaultValue: false,
-		},
+		width: { table: { disable: true } },
+		id: { table: { disable: true } },
+		title: { table: { disable: true } },
 	},
 } as Meta<typeof TygerAvatarComponent>;
 
@@ -21,5 +17,6 @@ export const TygerAvatar: Story = {
 	args: {
 		name: 'TrFelix',
 		size: '2xl',
+		variant: 'default',
 	},
 };

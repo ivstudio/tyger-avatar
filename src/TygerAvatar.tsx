@@ -49,21 +49,17 @@ export default function TygerAvatar({
 	const TrComponent = avatars[name];
 	const TrWidth = width ? width : sizes[size];
 
-	if (rounded) {
-		return (
-			<Suspense fallback="">
+	return (
+		<Suspense fallback="">
+			{!rounded ? (
+				<TrComponent width={TrWidth} />
+			) : (
 				<div
 					className="tyger-avatar"
 					style={{ width: TrWidth, height: TrWidth }}>
 					<TrComponent width={TrWidth} />
 				</div>
-			</Suspense>
-		);
-	}
-
-	return (
-		<Suspense fallback="">
-			<TrComponent width={TrWidth} />
+			)}
 		</Suspense>
 	);
 }

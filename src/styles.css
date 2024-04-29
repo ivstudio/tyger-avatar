@@ -1,11 +1,13 @@
-:root {
-	--tr-background: white;
-	--tr-border: rgb(31 41 55);
+:root,
+.light {
+	--tr-background: rgb(229 231 235);
+	--tr-border: rgb(209 213 219);
 }
 
-[data-theme='dark'] {
-	--tr-background: red;
-	--tr-border: rgb(31 41 55);
+[data-theme='dark'],
+.dark {
+	--tr-background: rgb(17 24 39);
+	--tr-border: rgb(3 7 18);
 }
 
 .tyger-avatar {

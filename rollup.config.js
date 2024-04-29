@@ -1,6 +1,6 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
-import { cssModules } from 'rollup-plugin-css-modules';
+import css from 'rollup-plugin-css-only';
 import filesize from 'rollup-plugin-filesize';
 import svgr from '@svgr/rollup';
 
@@ -8,7 +8,7 @@ const mainConfig = {
 	input: 'src/index.ts',
 	output: [
 		{
-			dir: 'lib/index.esm.js',
+			dir: 'lib/bundle',
 			format: 'esm',
 			sourcemap: true,
 		},
@@ -17,8 +17,11 @@ const mainConfig = {
 		peerDepsExternal(),
 		typescript({ useTsconfigDeclarationDir: true }),
 		filesize(),
+		css({
+			output: 'styles.css',
+			include: ['**/*.css'],
+		}),
 		svgr(),
-		cssModules(),
 	],
 };
 

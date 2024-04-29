@@ -16,14 +16,25 @@ npm i tyger-avatar
 
 ## Usage
 
-You can use path imports to avoid pulling in unused avatars.
-
 ```jsx
 import { TygerAvatar } from 'tyger-avatar';
 
 export default function App() {
   return (
     <TygerAvatar name="TrIggy" size="md"/>;
+  );
+}
+```
+
+or
+
+```jsx
+import { TygerAvatar } from 'tyger-avatar';
+import 'tyger-avatar/lib/bundle/bundle.css';
+
+export default function App() {
+  return (
+    <TygerAvatar name="TrIggy" size="md" rounded/>;
   );
 }
 ```
