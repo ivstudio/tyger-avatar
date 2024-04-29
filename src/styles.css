@@ -25,6 +25,16 @@
 
 .tyger-avatar > * {
 	-webkit-transform: scale(0.9) translateX(-8px);
-	-ms-transform: scale(0.9) translateX(-8px);
 	transform: scale(0.9) translateX(-8px);
+}
+
+.tyger-avatar.size-2xs > * {
+	-webkit-transform: scale(0.9) translateX(-1px);
+	transform: scale(0.9) translateX(-1px);
+}
+
+.tyger-avatar.size-xs > *,
+.tyger-avatar.size-sm > * {
+	-webkit-transform: scale(0.9) translateX(-3px);
+	transform: scale(0.9) translateX(-3px);
 }

@@ -8,6 +8,11 @@ export default {
 		width: { table: { disable: true } },
 		id: { table: { disable: true } },
 		title: { table: { disable: true } },
+		rounded: {
+			control: 'radio',
+			options: [true, false],
+			description: 'Rounded corners',
+		},
 	},
 } as Meta<typeof TygerAvatarComponent>;
 
@@ -17,6 +22,6 @@ export const TygerAvatar: Story = {
 	args: {
 		name: 'TrFelix',
 		size: '2xl',
-		variant: 'default',
+		rounded: true,
 	},
 };

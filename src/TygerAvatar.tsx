@@ -55,7 +55,7 @@ export default function TygerAvatar({
 				<TrComponent width={TrWidth} />
 			) : (
 				<div
-					className="tyger-avatar"
+					className={`tyger-avatar size-${size}`}
 					style={{ width: TrWidth, height: TrWidth }}>
 					<TrComponent width={TrWidth} />
 				</div>
