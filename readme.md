@@ -30,7 +30,7 @@ or
 
 ```jsx
 import { TygerAvatar } from 'tyger-avatar';
-import 'tyger-avatar/lib/bundle/bundle.css';
+import 'tyger-avatar/lib/bundle/styles.css';
 
 export default function App() {
   return (
@@ -43,12 +43,13 @@ export default function App() {
 
 ### Props
 
-| Prop   | Type                                                                                                                                                                                                                       |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name\* | `TrChelsea`, `TrEric`, `TrSamantha`, `TrTorsten`, `TrIggy`, `TrFranklin`, `TrImran`, `TrMaria`, `TrRachel`, `TrShamila`, `TrAlex`, `TrFelix`, `TrEnrique`, `TrSophia`, `TrHarry`, `TrHelen`, `TrStu`, `TrNancy`, `TrChad`, |
-| size   | `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`,                                                                                                                                                                         |
-| title  | string                                                                                                                                                                                                                     |
-| id     | string                                                                                                                                                                                                                     |
+| Prop    | Type                                                                                                                                                                                                                       |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name\*  | `TrChelsea`, `TrEric`, `TrSamantha`, `TrTorsten`, `TrIggy`, `TrFranklin`, `TrImran`, `TrMaria`, `TrRachel`, `TrShamila`, `TrAlex`, `TrFelix`, `TrEnrique`, `TrSophia`, `TrHarry`, `TrHelen`, `TrStu`, `TrNancy`, `TrChad`, |
+| size    | `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`,                                                                                                                                                                         |
+| title   | string                                                                                                                                                                                                                     |
+| id      | string                                                                                                                                                                                                                     |
+| rounded | boolean                                                                                                                                                                                                                    |
 
 [View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
 
