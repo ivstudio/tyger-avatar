@@ -1,12 +1,15 @@
 {
 	"name": "tyger-avatar",
-	"version": "2.2.2",
+	"version": "2.2.3",
 	"sideEffects": false,
 	"description": "Tyger-avatar offers a unique collection of avatar illustrations for React. These avatars are SVG-based and come with a wide array of customization options.",
 	"homepage": "https://ivstudio.github.io/tyger-avatar-wiki/",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ivstudio/tyger-avatar"
+	},
+	"publishConfig": {
+		"@ivstudio:registry": "https://npm.pkg.github.com"
 	},
 	"main": "lib/bundle/index.js",
 	"types": "lib/index.d.ts",
