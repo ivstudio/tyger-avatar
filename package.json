@@ -1,35 +1,32 @@
 {
 	"name": "tyger-avatar",
 	"version": "2.2.4",
-	"sideEffects": false,
-	"description": "Tyger-avatar offers a unique collection of avatar illustrations for React. These avatars are SVG-based and come with a wide array of customization options.",
+	"description": "Tyger-avatar offers a unique collection of avatar illustrations for React. These avatars are SVG-based and provide a wide range of customization options.",
+	"keywords": [
+		"avatars",
+		"react avatar library",
+		"avatar generator"
+	],
 	"homepage": "https://ivstudio.github.io/tyger-avatar-wiki/",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ivstudio/tyger-avatar"
 	},
-	"publishConfig": {
-		"tyger-avatar:registry": "https://npm.pkg.github.com"
-	},
+	"license": "MIT",
+	"author": "Iggy Villamar <iggy@ivstudio.com>",
+	"sideEffects": false,
 	"main": "lib/bundle/index.js",
 	"types": "lib/index.d.ts",
 	"files": [
 		"lib"
 	],
 	"scripts": {
-		"clean": "rm -rf src/TrAvatars && rm -rf lib",
-		"svgr": "svgr --icon --title-prop --no-dimensions --typescript -d src/TrAvatars assets",
 		"build": "npm run clean && npm run svgr && rollup -c --bundleConfigAsCjs",
+		"build-storybook": "storybook build",
+		"clean": "rm -rf src/TrAvatars && rm -rf lib",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"svgr": "svgr --icon --title-prop --no-dimensions --typescript -d src/TrAvatars assets"
 	},
-	"keywords": [
-		"avatars",
-		"react avatar library",
-		"avatar generator"
-	],
-	"author": "Iggy Villamar <iggy@ivstudio.com>",
-	"license": "MIT",
 	"devDependencies": {
 		"@babel/core": "^7.24.0",
 		"@chromatic-com/storybook": "^1.6.1",
@@ -62,5 +59,8 @@
 	},
 	"peerDependencies": {
 		"react": "^17.0.0 || ^18.0.0"
+	},
+	"publishConfig": {
+		"tyger-avatar:registry": "https://npm.pkg.github.com"
 	}
 }
