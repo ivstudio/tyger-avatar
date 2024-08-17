@@ -3,6 +3,7 @@ import { themes } from '@storybook/theming';
 
 const preview: Preview = {
 	parameters: {
+		actions: { disable: true },
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
