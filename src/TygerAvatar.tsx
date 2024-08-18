@@ -29,7 +29,7 @@ const avatars: AvatarTypeOptions = {
 	TrAlex: lazy(() => import(`./TrAvatars/TrAlex`)),
 };
 
-const sizes: AvatarSizeOptions = {
+export const sizes: AvatarSizeOptions = {
 	'2xs': 16,
 	'xs': 32,
 	'sm': 48,
