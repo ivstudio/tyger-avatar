@@ -24,4 +24,4 @@ yarn-error.log*
 
 storybook-static
 *storybook.log
-stats.html
+/visualizer

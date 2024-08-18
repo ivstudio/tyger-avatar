@@ -35,7 +35,7 @@ const mainConfig = {
 		}),
 		svgr(),
 		terser(),
-		visualizer({ open: true }),
+		visualizer({ open: true, filename: 'visualize/bundle-stats.html' }),
 	],
 };
 
