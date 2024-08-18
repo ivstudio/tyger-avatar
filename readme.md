@@ -1,8 +1,10 @@
 # tyger-avatar
 
-![npm](https://img.shields.io/npm/v/tyger-avatar) ![npm type definitions](https://img.shields.io/npm/types/tyger-avatar) ![npm](https://img.shields.io/npm/dm/tyger-avatar)
+![npm](https://img.shields.io/npm/v/tyger-avatar) ![npm type definitions](https://img.shields.io/npm/types/tyger-avatar) ![npm](https://img.shields.io/npm/dm/tyger-avatar) ![tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
 > An illustrated avatar react library
+
+Tyger-avatar offers a unique collection of avatar illustrations for React. These avatars are SVG-based and provide a wide range of customization options.
 
 [View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
 
@@ -19,11 +21,7 @@ npm i tyger-avatar
 ```jsx
 import { TygerAvatar } from 'tyger-avatar';
 
-export default function App() {
-  return (
-    <TygerAvatar name="TrIggy" size="md"/>;
-  );
-}
+<TygerAvatar name="TrIggy" size="md" />;
 ```
 
 or
@@ -32,24 +30,18 @@ or
 import { TygerAvatar } from 'tyger-avatar';
 import 'tyger-avatar/lib/bundle/styles.css';
 
-export default function App() {
-  return (
-    <TygerAvatar name="TrIggy" size="md" rounded/>;
-  );
-}
+<TygerAvatar name="TrIggy" size="2xl" rounded />;
 ```
 
 ## Options
 
-### Props
-
-| Prop    | Type                                                                                                                                                                                                                       |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name\*  | `TrChelsea`, `TrEric`, `TrSamantha`, `TrTorsten`, `TrIggy`, `TrFranklin`, `TrImran`, `TrMaria`, `TrRachel`, `TrShamila`, `TrAlex`, `TrFelix`, `TrEnrique`, `TrSophia`, `TrHarry`, `TrHelen`, `TrStu`, `TrNancy`, `TrChad`, |
-| size    | `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`,                                                                                                                                                                         |
-| title   | string                                                                                                                                                                                                                     |
-| id      | string                                                                                                                                                                                                                     |
-| rounded | boolean                                                                                                                                                                                                                    |
+| Prop    | Type                                                                                                                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name    | `TrChelsea`, `TrEric`, `TrSamantha`, `TrTorsten`, `TrIggy`, `TrFranklin`, `TrImran`, `TrMaria`, `TrRachel`, `TrShamila`, `TrAlex`, `TrFelix`, `TrEnrique`, `TrSophia`, `TrHarry`, `TrHelen`, `TrStu`, `TrNancy`, `TrChad` |
+| size    | `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`                                                                                                                                                                         |
+| title   | string                                                                                                                                                                                                                    |
+| id      | string                                                                                                                                                                                                                    |
+| rounded | boolean                                                                                                                                                                                                                   |
 
 [View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
 
