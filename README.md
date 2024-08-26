@@ -6,7 +6,7 @@
 
 Tyger-avatar offers a unique collection of avatar illustrations for React. These avatars are SVG-based and provide a wide range of customization options.
 
-[View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
+-   [Tyger-Avatar Storybook](https://main--662d180db0870d8238437262.chromatic.com/)
 
 ---
 
@@ -43,7 +43,7 @@ import 'tyger-avatar/lib/bundle/styles.css';
 | id      | string                                                                                                                                                                                                                    |
 | rounded | boolean                                                                                                                                                                                                                   |
 
-[View all avatars](https://ivstudio.github.io/tyger-avatar-wiki/)
+-   [Storybook](https://main--662d180db0870d8238437262.chromatic.com/)
 
 ## License
 
