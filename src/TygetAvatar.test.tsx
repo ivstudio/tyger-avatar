@@ -1,10 +1,11 @@
 import React from 'react';
 import { render, act } from './tests/testUtils';
+import '@testing-library/jest-dom';
 
 import TygerAvatar, { sizes } from './TygerAvatar';
 import { TrComponentProps } from './TygerAvatar.types';
 
-const avatarId = '[data-name="Layer 1"]';
+const avatarId = '[data-name="trAvatar"]';
 
 const renderTygerAvatar = (props: TrComponentProps) => {
 	return act(() => render(<TygerAvatar {...props} />));
