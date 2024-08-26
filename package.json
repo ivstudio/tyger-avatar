@@ -7,7 +7,7 @@
 		"react avatar library",
 		"avatar generator"
 	],
-	"homepage": "https://ivstudio.github.io/tyger-avatar-wiki/",
+	"homepage": "https://www.ivstudio.com/tyger-avatar",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ivstudio/tyger-avatar"
@@ -39,7 +39,6 @@
 		"@rollup/plugin-terser": "^0.4.4",
 		"@storybook/addon-essentials": "^8.2.9",
 		"@storybook/addon-links": "^8.2.9",
-		"@storybook/addon-onboarding": "^8.2.9",
 		"@storybook/blocks": "^8.2.9",
 		"@storybook/manager-api": "^8.2.9",
 		"@storybook/react": "^8.2.9",
@@ -49,7 +48,7 @@
 		"@svgr/cli": "^8.1.0",
 		"@svgr/rollup": "^8.1.0",
 		"@testing-library/dom": "^10.4.0",
-		"@testing-library/jest-dom": "^6.4.8",
+		"@testing-library/jest-dom": "^6.5.0",
 		"@testing-library/react": "^16.0.0",
 		"@types/jest": "^29.5.12",
 		"@types/react": "^18.3.3",
