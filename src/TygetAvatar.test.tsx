@@ -1,11 +1,33 @@
 import React from 'react';
-import { render, act } from './tests/testUtils';
+import { render, act, waitFor } from './tests/testUtils';
 import '@testing-library/jest-dom';
 
 import TygerAvatar, { sizes } from './TygerAvatar';
-import { TrComponentProps } from './TygerAvatar.types';
+import { TrComponentProps, AvatarVariants } from './TygerAvatar.types';
 
 const avatarId = '[data-name="trAvatar"]';
+const avatarNames = [
+	'TrChelsea',
+	'TrEric',
+	'TrSamantha',
+	'TrTorsten',
+	'TrIggy',
+	'TrFranklin',
+	'TrImran',
+	'TrMaria',
+	'TrRachel',
+	'TrShamila',
+	'TrFelix',
+	'TrEnrique',
+	'TrSophia',
+	'TrHarry',
+	'TrHelen',
+	'TrStu',
+	'TrNancy',
+	'TrChad',
+	'TrCathy',
+	'TrAlex',
+] as AvatarVariants[];
 
 const renderTygerAvatar = (props: TrComponentProps) => {
 	return act(() => render(<TygerAvatar {...props} />));
@@ -25,6 +47,18 @@ describe('TygerAvatar', () => {
 			});
 			const avatar = container.querySelector(avatarId);
 			expect(avatar).toHaveAttribute('width', width.toString());
+		});
+	});
+
+	avatarNames.forEach((name: AvatarVariants) => {
+		it(`should render the "${name}" avatar`, async () => {
+			const { container } = await renderTygerAvatar({ name });
+			const avatarName = name.replace('Tr', '').toLowerCase();
+			waitFor(() =>
+				expect(
+					container.querySelector(`#tr${avatarName}_svg__avatar`)
+				).toBeInTheDocument()
+			);
 		});
 	});
 
