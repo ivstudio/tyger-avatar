@@ -30,7 +30,7 @@ const avatarNames = [
 ] as AvatarVariants[];
 
 const renderTygerAvatar = (props: TrComponentProps) => {
-	return act(() => render(<TygerAvatar {...props} />));
+	return act(async () => render(<TygerAvatar {...props} />));
 };
 
 describe('TygerAvatar', () => {
