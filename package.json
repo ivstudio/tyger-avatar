@@ -43,7 +43,7 @@
 		"@storybook/manager-api": "^8.4.7",
 		"@storybook/react": "^8.4.2",
 		"@storybook/react-vite": "^8.2.9",
-		"@storybook/test": "^8.4.5",
+		"@storybook/test": "^8.4.7",
 		"@storybook/theming": "^8.2.9",
 		"@svgr/cli": "^8.1.0",
 		"@svgr/rollup": "^8.1.0",
