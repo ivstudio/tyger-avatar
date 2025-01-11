@@ -71,7 +71,7 @@
 		"typescript": "^5.4.5"
 	},
 	"peerDependencies": {
-		"react": "^18.0.0"
+		"react": "^18.0.0 || ^19.0.0"
 	},
 	"publishConfig": {
 		"tyger-avatar:registry": "https://npm.pkg.github.com"
